@@ -24,8 +24,7 @@
 					<a href="http://danskerne.se"><img alt="Logo" class="img-responsive" src="http://i.imgur.com/qNWXosa.png?1" title="Danskerne i Sverige"></a>
 				</header>
 			</div>
-	    </div>
-		
+		</div>
 		<!-- Logo -->
 		<!--Aesthetic-->
 
@@ -35,7 +34,7 @@
 
 
 		<nav class="navbar navbar-light navbar-toggleable-sm justify-content-center">
-			<button class="navbar-toggler navbar-toggler-right" data-target="#collapsingNavbar3" data-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button>
+			<button class="navbar-toggler" data-target="#collapsingNavbar3" data-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button>
 
 			<div class="navbar-collapse collapse" id="collapsingNavbar3">
 				<ul class="navbar-nav mx-auto w-100 justify-content-center">
@@ -71,44 +70,36 @@
 							</li>
 
 
-							<li class="nav-item">
+							<li class="end-nav">
 								<a class="nav-link" href="#Arkiv">Arkiv</a>
 							</li>
 						</ul>
 					</nav>
 
 
-					<p class="kon-cop-dom"><a href="#Kontakt">Kontakt</a> | 
-					<?php echo date("Y"); ?>
-
-  
-  Danskerne.se | <a class="link" href="http://one.me/enacooar" target="_blank">Domain host</a></p>
-				</div>
-			</div>
-			<!-- Social media links-->
-
-
-			<div class="text-center">
-				<nav class="navbar navbar-light navbar-toggleable-sm justify-content-center">
-					<div class="hovericon column">
-						<div class="navbar-nav mx-auto w-100 justify-content-center" style="margin-left: 2em">
-							<div>
-								<figure>
-									<a alt="Følj os på Instagram." href="" target="_blank"><img alt="Følj os på Pinterest." class="icons" src="http://i.imgur.com/Mdt2usq.png" title="Følj os på Pinterest."></a>
-								</figure>
-							</div>
+					<p class="contact"><a href="#Kontakt">Kontakt</a> | &copy; 
+					
+					<?php
+					  $fromYear = 2003; 
+					  $thisYear = (int)date('Y'); 
+					  echo $fromYear . (($fromYear != $thisYear) ? '-' . $thisYear : '');?> 
+					  
+					  Danskerne.se <!-- PHP_date-->
+					 | <a class="link" href="http://one.me/enacooar" target="_blank">Domain host</a></p>
+					<!-- Social media links-->
 
 
-							<div>
-								<figure>
-									<a alt="Følj os på Instagram." href="" target="_blank"><img alt="Følj os på Instagram." class="icons" src="http://i.imgur.com/nGbgnuD.png" title="Følj os på Instagram."></a>
-								</figure>
-							</div>
+					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-center" style="padding:0px">
+						<div class="short-div">
+							<figure>
+								<a alt="Følj os på Pinterest." class="hovericon" href="" target="_blank"><img alt="Følj os på Pinterest." src="http://i.imgur.com/Mdt2usq.png" title="Følj os på Pinterest."></a>
+								<a alt="Følj os på Instagram." class="hovericon" href="" target="_blank"><img alt="Følj os på Instagram." src="http://i.imgur.com/nGbgnuD.png" title="Følj os på Instagram."></a>
+							</figure>
 						</div>
 					</div>
-				</nav>
+					<!-- Social media links-->
+				</div>
 			</div>
-			<!-- Social media links-->
 		</footer>
 	</div>
 </body>
